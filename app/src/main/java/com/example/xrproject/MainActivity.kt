@@ -47,6 +47,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+
         setContent {
             XRProjectTheme {
                 val spatialConfiguration = LocalSpatialConfiguration.current
@@ -56,6 +57,8 @@ class MainActivity : ComponentActivity() {
                             onRequestHomeSpaceMode = spatialConfiguration::requestHomeSpaceMode
                         )
                     }
+
+
                 } else {
                     My2DContent(onRequestFullSpaceMode = spatialConfiguration::requestFullSpaceMode)
                 }
