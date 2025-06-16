@@ -158,4 +158,5 @@ fun HomeSpaceModeButtonPreview() {
     XRProjectTheme {
         HomeSpaceModeIconButton(onClick = {})
     }
+
 }
